@@ -4,7 +4,7 @@
 ![Diagrama UML](assets/mermaidIphoneUML.png)
 
 ---
-O Diagrama foi criado com o auxilio do website: [mermaid.live](mermaid.live)
+O Diagrama foi criado com o auxilio do website: [mermaid.live](https://mermaid.live)
 
 Código utilizado:
 ```
