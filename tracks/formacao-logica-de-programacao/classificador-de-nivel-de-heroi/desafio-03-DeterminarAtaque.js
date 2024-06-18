@@ -37,3 +37,46 @@ Ao final deve se exibir uma mensagem:
   ex: mago atacou usando magia
   guerreiro atacou usando espada
 */
+
+
+class Heroi {
+  constructor(nome, idade, tipo) {
+    this.nome = nome;
+    this.idade = idade;
+    this.tipo = tipo;
+  }
+
+  atacar() {
+    let ataque;
+    switch (this.tipo) {
+      case "mago":
+        ataque = "usou magia";
+        break;
+      case "guerreiro":
+        ataque = "usou espada";
+        break;
+      case "monge":
+        ataque = "usou artes marciais";
+        break;
+      case "ninja":
+        ataque = "usou shuriken";
+        break;
+      default:
+        ataque = "ataque genérico";
+    }
+
+    console.log(`O ${this.tipo} ${this.nome} atacou usando ${ataque}`);
+  }
+}
+
+// Criar instâncias de herói
+let mago = new Heroi("Merlin", 300, "mago");
+let guerreiro = new Heroi("Arthur", 25, "guerreiro");
+let monge = new Heroi("Wukong", 500, "monge");
+let ninja = new Heroi("Ryu Hayabusa", 35, "ninja");
+
+// Fazer os heróis atacarem
+mago.atacar();
+guerreiro.atacar();
+monge.atacar();
+ninja.atacar();
